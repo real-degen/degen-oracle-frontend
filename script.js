@@ -4,7 +4,7 @@ async function analyzeWallet() {
     resultDiv.innerHTML = "Analyzing...";
 
     try {
-        const response = await fetch("https://degen-oracle-backend.onrender.com/analyze", {
+        const response = await fetch("https://degen-oracle.onrender.com/analyze", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ wallet_address: walletAddress })
